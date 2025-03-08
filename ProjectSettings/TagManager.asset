@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Enemy
+  - Trap
   layers:
   - Default
   - TransparentFX
@@ -38,20 +40,20 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
+  - name: Binalar
+    uniqueID: 1705510487
     locked: 0
   - name: ArkaPlan
     uniqueID: 1225442831
-    locked: 0
-  - name: Binalar
-    uniqueID: 1705510487
     locked: 0
   - name: Road
     uniqueID: 2933394319
     locked: 0
   - name: YolUstu
     uniqueID: 2113984151
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   m_RenderingLayers:
   - Default
