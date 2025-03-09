@@ -9,6 +9,7 @@ public class EnemyManager : MonoBehaviour
    [SerializeField] private GameObject _enemy2;
    [SerializeField] private GameObject _enemy3;
    [SerializeField] private GameObject _enemy4;
+   [SerializeField] private PlayerController _playerController;
 
    [Header("Settings")]
 
@@ -21,7 +22,8 @@ public class EnemyManager : MonoBehaviour
     }
     private void Update() 
     {
-        SpawnEnemy();    
+       var IsGameOver = _playerController.GetIsGameOver();
+       if(!IsGameOver) { SpawnEnemy(); }       
     }
    private void SpawnEnemy()
    {
