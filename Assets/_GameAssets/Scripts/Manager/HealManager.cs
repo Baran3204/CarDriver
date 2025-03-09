@@ -13,6 +13,7 @@ public class HealManager : MonoBehaviour
 
    [SerializeField] private GameObject[] _healObjects;
    [SerializeField] private PlayerController _playerController;
+   [SerializeField] private RectTransform _gameOverUI;
 
    [Header("Settings")]
    [SerializeField] private float _maxHeal = 3f;
@@ -36,6 +37,7 @@ public class HealManager : MonoBehaviour
         if(_maxHeal <= 0f)
         {
            _playerController.ChangeGameOver(true);
+            _gameOverUI.DOScale(1F, 0.5f).SetEase(Ease.OutBack);
         }
     }
 

@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class ScoreManagerUI : MonoBehaviour
 {
@@ -28,5 +27,10 @@ public class ScoreManagerUI : MonoBehaviour
             _currentTime = 0f;
         }
      }
+   }
+
+   public void ResetScore()
+   {
+      _score = 0f;
    }
 }

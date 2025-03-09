@@ -45,7 +45,7 @@ public class MainMenuUI : MonoBehaviour
         
     }
 
-    private IEnumerator StartTimer()
+    public IEnumerator StartTimer()
     {
         for(int i = 0; i <= 3; i++)
         {
