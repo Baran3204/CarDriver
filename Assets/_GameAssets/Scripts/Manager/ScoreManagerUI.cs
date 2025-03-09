@@ -28,9 +28,4 @@ public class ScoreManagerUI : MonoBehaviour
         }
      }
    }
-
-   public void ResetScore()
-   {
-      _score = 0f;
-   }
 }

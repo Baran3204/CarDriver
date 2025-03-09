@@ -48,6 +48,7 @@ public class PlayerController : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Trap"))
         {
+            AudioManager.Instance.Play(SoundType.PickupBadSound);
             OnTrapActived += SpeedDown;
             OnTrapActived?.Invoke();
             Destroy(other.gameObject);
