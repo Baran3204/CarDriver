@@ -7739,7 +7739,7 @@ MonoBehaviour:
   _enemy3: {fileID: 4462475308409522197, guid: 3b9064ae60b47aa4a9dc72e6efc116d3, type: 3}
   _enemy4: {fileID: 6506242760340687256, guid: decae10a994ffac4fb55e80e7f37b082, type: 3}
   _playerController: {fileID: 892748943}
-  _spawnCooldown: 1
+  _spawnCooldown: 0.75
   _startCooldown: 0
   _enemySpeed: 500
 --- !u!1 &2072825004
